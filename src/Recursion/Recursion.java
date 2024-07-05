@@ -1,4 +1,4 @@
-package methods;
+package Recursion;
 //Print number 5 to 1
 public class Recursion {
 //    public static void printNum(int n){
@@ -67,22 +67,24 @@ public class Recursion {
 
     //Fibonacci Series
 
-//    public static void printFib(int a, int b,int n){
-//        if(n==0){
-//            return;
-//        }
-//        int c= a+b;
-//        System.out.println(c);
-//        printFib(b,c,n-1);
-//
-//    }
-//
-//    public static void main(String[] args) {
-//        int a=0, b=1;
-//        System.out.println(a);
-//        System.out.println(b);
-//        int n=7;
-//        printFib(a,b,n-2);
+    public static void printFib(int a, int b, int n) {
+        if (n == 0) {
+            return;
+        }
+        int c = a + b;
+        System.out.println(c);
+        printFib(b, c, n - 1);
+
+    }
+
+    public static void main(String[] args) {
+        int a = 0, b = 1;
+        System.out.println(a);
+        System.out.println(b);
+        int n = 7;
+        printFib(a, b, n - 2);
+    }
+}
 
 
 //    //Print X^n (Stack height =n)
@@ -105,25 +107,25 @@ public class Recursion {
 
     //Print X^n (Stack height =Logn)
 
-    public static int calcPower(int x, int n) {
-        if (n == 0) {
-            return 1;     //BaseCase 1
-        }
-        if (x == 0) {
-            return 0;   //BaseCase 2
-        }
+//    public static int calcPower(int x, int n) {
+//        if (n == 0) {
+//            return 1;     //BaseCase 1
+//        }
+//        if (x == 0) {
+//            return 0;   //BaseCase 2
+//        }
         //if n is even
-        if (n % 2 == 0) {
-            return calcPower(x, n / 2) * calcPower(x, n / 2);
-        } else {
-            return calcPower(x, n / 2) * calcPower(x, n / 2) * x;
-        }
-    }
-
-    public static void main(String[] args) {
-        System.out.println(calcPower(2, 5));
-    }
-}
+//        if (n % 2 == 0) {
+//            return calcPower(x, n / 2) * calcPower(x, n / 2);
+//        } else {
+//            return calcPower(x, n / 2) * calcPower(x, n / 2) * x;
+//        }
+//    }
+//
+//    public static void main(String[] args) {
+//        System.out.println(calcPower(2, 5));
+//    }
+//}
 
 
 

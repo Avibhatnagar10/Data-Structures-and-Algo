@@ -1,3 +1,5 @@
+package Trees;
+
 // Node class to represent each node in the binary tree
 class Node {
     int data;
